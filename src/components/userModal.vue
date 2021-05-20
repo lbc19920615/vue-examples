@@ -16,6 +16,7 @@
        class="user-modal"
        :style="{left: modalPosLeft, top: modalPosTop}"
        @mouseleave="onModalMouseLeave"
+       @click.stop=""
   >
     <div class="user-modal__userinfo">
       <slot></slot>

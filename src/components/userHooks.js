@@ -11,7 +11,6 @@ function hideOnClickOutside(onOutSideClicked) {
       if (onOutSideClicked) {
         onOutSideClicked()
       }
-      // removeClickListener()
     }
   }
 
