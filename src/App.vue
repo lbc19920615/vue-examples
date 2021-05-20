@@ -23,7 +23,7 @@ export default {
   methods: {
     onHoverModal(e) {
       this.userInfo = e.userInfo
-      console.log(e)
+      // console.log(e)
       this.$refs.modal.open(e.option)
     }
   }
