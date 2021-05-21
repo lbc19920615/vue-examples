@@ -11,6 +11,8 @@
 </template>
 
 <script>
+console.log(import.meta.env);
+
 import User from "./components/user.vue";
 import UserModal from "./components/userModal.vue";
 export default {
