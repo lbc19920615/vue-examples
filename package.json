@@ -12,6 +12,7 @@
     "vue": "^3.0.5"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.4.0",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
     "less": "^4.1.1",
