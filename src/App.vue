@@ -4,9 +4,9 @@
   <user name="google开发者2" uid="test2" @hovermodal="onHoverModal"></user>
 
   <user-modal ref="modal">
-    <div>关注: {{userInfo.attentionNum}}</div>
-    <div>粉丝: {{userInfo.fanNum}}</div>
-    <div>微博: {{userInfo.weiboNum}}</div>
+    <div>关注: {{ userInfo.attentionNum }}</div>
+    <div>粉丝: {{ userInfo.fanNum }}</div>
+    <div>微博: {{ userInfo.weiboNum }}</div>
   </user-modal>
 </template>
 
@@ -14,20 +14,20 @@
 import User from "./components/user.vue";
 import UserModal from "./components/userModal.vue";
 export default {
-  components: {UserModal, User},
+  components: { UserModal, User },
   data() {
     return {
-      userInfo: {}
-    }
+      userInfo: {},
+    };
   },
   methods: {
     onHoverModal(e) {
-      this.userInfo = e.userInfo
+      this.userInfo = e.userInfo;
       // console.log(e)
-      this.$refs.modal.open(e.option)
-    }
-  }
-}
+      this.$refs.modal.open(e.option);
+    },
+  },
+};
 </script>
 
 <style>
